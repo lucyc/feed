@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Blog Feed</title>
+</head>
+
+<body>
+	<div id="feed"></div>
+
+	<script type="text/javascript" src="//www.google.com/jsapi"></script>
+	<script type="text/javascript" src="blogfeed.js"></script>
+	<script>
+    	$(document).ready(function() {
+			$('#feed').blogFeed({ 
+			'feedPath' 		: 'http://blog.uvm.edu/cwcallah/feed/',
+			'feedQuantity' 	: 3,
+			'feedImage'		: 1
+			 }); 
+		});
+	</script>
+</body>
+</html>
