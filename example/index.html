@@ -3,18 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <title>Blog Feed</title>
+<link rel="stylesheet" href="styles/blogfeed.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
-	<div id="feed"></div>
-
-	<script type="text/javascript" src="//www.google.com/jsapi"></script>
+	<div id="container">
+		<h1>Feed Me</h1>
+		<div class="wrapper">
+			<div id="feed">
+				<div class="loader"><i class="fa fa-spinner fa-3x fa-spin"></i><span>Loading</span></div>
+			</div>
+	  	</div>
+	</div>
+	  	
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
 	<script type="text/javascript" src="blogfeed.js"></script>
 	<script>
     	$(document).ready(function() {
 			$('#feed').blogFeed({ 
 			'feedPath' 		: 'http://blog.uvm.edu/cwcallah/feed/',
-			'feedQuantity' 	: 3,
+			'feedQuantity' 	: 5,
 			'feedImage'		: 1
 			 }); 
 		});

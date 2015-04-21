@@ -1,0 +1,83 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+
+body {
+	font-family: 'Droid Sans';
+}
+
+#container {
+	width: 90%;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	font-weight: normal;
+	color: #333;
+	font-size: 3em;
+	font-weight: 600;
+	margin: 0 auto;
+	padding: 1em;
+}
+
+.wrapper {
+	border: 1px solid #ccc;
+	padding: 5%;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	border-radius: 0px 0px 10px 10px;
+	-webkit-box-shadow: #B3B3B3 1px 1px 1px;
+	-moz-box-shadow: #B3B3B3 1px 1px 1px; 
+	box-shadow: #B3B3B3 1px 1px 1px;
+}
+
+#feed article p, #feed article img {
+  	margin-top: 10px;
+  	max-height: 200px;
+}
+
+#feed article {
+  	width: 100%;
+  	float: none;
+  	border-bottom: 1px dashed #ccc;
+}
+
+#feed article:last-child {
+ 	border-bottom: none;
+}
+
+#feed h1 {
+	font-size: 1.2em;
+	text-align: left;
+	margin: 0;
+	padding: 4% 0 1.5% 0;
+}
+
+.loader {text-align: center; color: #5e5e5e;}
+
+.loader i {padding: 4%;}
+.loader span {display: block;}
+
+
+#feed a {
+	text-decoration: none;
+}
+
+#feed a:hover {
+  	text-decoration: underline;
+}
+
+img.imageleft {
+  	float: left;
+  	margin: 0 4% 4% 0;
+}
+
+.clearfix:before, .clearfix:after {
+  	display: table;
+  	content: "";
+  	line-height: 0;
+}
+
+.clearfix:after {
+  	clear: both;
+}
